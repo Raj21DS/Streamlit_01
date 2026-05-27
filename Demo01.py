@@ -19,7 +19,7 @@ return {
     "likes": stats.get("likeCount", 0),
     "comments": stats.get("commentCount", 0)
         }
-  return None
+return None
 st.write(f"👁 Views: {stats['views']}")
 st.write(f"👍 Likes: {stats['likes']}")
 st.write(f"💬 Comments: {stats['comments']}")
