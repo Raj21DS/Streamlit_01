@@ -15,11 +15,11 @@ data = response.json()
 if "items" in data and len(data["items"]) > 0:
   stats = data["items"][0]["statistics"]
 # return 
-    "views": stats.get("viewCount", 0),
-    "likes": stats.get("likeCount", 0),
-    "comments": stats.get("commentCount", 0)
+views=  stats.get("viewCount", 0),
+    # "likes": stats.get("likeCount", 0),
+    # "comments": stats.get("commentCount", 0)
         
 # return None
 st.write(f"👁 Views: {stats['views']}")
-st.write(f"👍 Likes: {stats['likes']}")
-st.write(f"💬 Comments: {stats['comments']}")
+# st.write(f"👍 Likes: {stats['likes']}")
+# st.write(f"💬 Comments: {stats['comments']}")
